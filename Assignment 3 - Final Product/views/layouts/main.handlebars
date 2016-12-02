@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <link href="/public/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/public/css/custom.css" rel="stylesheet">
+    <title>{{partials.pageTitle}}</title>
+</head>
+
+<body>
+<div class="main">
+    <img id="banner" src="/public/img/banner.jpg" height="200">
+    <div id="title"><a href="/">Piercefield's Photo Site!</a></div>
+</div>
+<div class="container">
+    <div class="row row-centered">
+        {{{body}}}
+    </div>
+</div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="/public/js/bootstrap.min.js"></script>
+<script>
+    $('#upload').click(function(){
+        window.location.href = "/upload";
+    });
+</script>
+</html>

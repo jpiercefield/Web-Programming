@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Page</title>
+    
+<script>
+function validateForm() {
+    var letterNumber = /^[0-9a-zA-Z]+$/; 
+    var x = document.forms["myForm"]["title"].value;
+    if (x.length < 3) {
+        alert("Title Needs To Be At Least 3 Characters Long");
+        return false;
+        if(x.value.match(letterNumber))
+        {
+
+        } else {
+            alert("Title must be alphanumeric");
+            return false;   
+        }
+    }
+    
+    var y = document.forms["myForm"]["lotsoftext"].value;
+    if (y.length == 0)
+    {
+        alert("Caption Must Not Be Empty");
+        return false;
+    }
+    
+}
+</script>
+</head>
+<body>
+    <h1><center><img src="Images/Drawing.png" onload="loadImage()" width="500" height="169"></center></h1>
+    <center>
+    <form name="myForm" action="Homepage.html" onsubmit="return validateForm();" method="GET">
+    
+        Photo Title: <input type="text" name="title" required>
+        <br>
+        <input type="file" name="upload" id="upload" required>
+        <br><br><br>
+        Caption: <textarea rows="10" cols="20" name="lotsoftext" required></textarea>
+        <a class="btn" href="Homepage.html"></a>
+        <input type="submit" value="Upload">
+    </form>    
+        <a href="Homepage.html">Cancel</a>
+    </center>
+</body>
+<script>
+function loadImage() {
+    alert("Image is loaded");
+}
+</script>
+</html>

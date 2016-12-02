@@ -1,0 +1,11 @@
+<div class="col-sm-12 uploadPic">
+    <a href="/upload" id="uploadPic">Click here to upload a new image</a>
+</div>
+
+<table align="center">
+    <tr>
+        {{#each partials.posts}}
+            {{> singlepost}}
+        {{/each}}
+    </tr>
+</table>

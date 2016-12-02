@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <center><a href="Homepage.html">Home</a><title>Login Page</title></center>
+    
+<script>
+function validateForm() {
+    var x = document.forms["myForm"]["email"].value;
+    var atpos = x.indexOf("@");
+    var dotpos = x.lastIndexOf(".");
+    if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length) {
+        alert("Not a valid e-mail address");
+        return false;
+    }
+    var y = document.forms["myForm"]["userpass"].value;
+    if(y.length == 0)
+    {
+        alert("Password Field Cannot Be Empty");
+        return false;
+    }
+}
+</script>
+</head>
+<body>
+    <h1><center><img src="Images/Drawing.png" onload="loadImage()" width="500" height="169"></center></h1>
+    <form name="myForm" action="Upload.html" onsubmit="return validateForm();" method="post">
+        Email: <input type="text" name="email">
+        <br>
+        Password: <input type="password" name="userpass">
+        <br>
+        <a class="btn" href="Upload.html"></a>
+        <input type="submit" value="Submit">
+     </form>
+</body>
+<script>
+function loadImage() {
+    alert("Image is loaded");
+}
+</script>
+</html>

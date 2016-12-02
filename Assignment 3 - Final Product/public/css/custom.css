@@ -1,0 +1,173 @@
+@font-face {
+    font-family: Pacifico;
+    src: url('../fonts/Pacifico.ttf');
+}
+
+body{
+    font-family: 'Droid Sans', 'Helvetica', Arial, sans-serif;
+    color: #202020;
+    font-size:16px;
+    overflow-x: hidden;
+}
+
+.main{
+    width:100%;
+}
+
+.uploadPic{
+    font-size:1.2em;
+    text-align:center;
+    margin:20px;
+}
+
+.uploadPic a{
+    text-decoration: none;
+    color: #1f4164;
+    text-transform: uppercase;
+    transition: 0.1s all ease;
+}
+
+.uploadPic a:hover{
+    color: #2c5d8d;
+}
+
+#banner{
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:-100;
+    width:100%;
+}
+
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:center;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+
+#title{
+    position:relative;
+    z-index:1000;
+    display:block;
+    margin:0 auto;
+    margin-top:50px;
+    text-align:center;
+    font-family:Pacifico, sans-serif;
+    font-size:3em;
+    color: #202020;
+}
+
+#title a{
+    text-decoration:none;
+    color:inherit;
+}
+
+.spost{
+    margin:20px;
+}
+
+.spost .image{
+    position:relative;
+    display:block;
+    margin:0 auto;
+    width:500px;
+    height:300px;
+    border:2px solid black;
+    overflow:hidden;
+}
+
+.spost .image img{
+    position:absolute;
+    right:0;
+    left:0;
+    max-height: 400px;
+    width:inherit;
+    height:auto;
+}
+
+.spost .title{
+    font-family:Pacifico,sans-serif;
+    font-size:1.3em;
+    color: #2d2d2d;
+    text-align:left;
+}
+
+.spost .description{
+    text-align:left;
+    color: #575757;
+}
+
+.spost .timestamp{
+    position:absolute;
+    bottom:0;
+    font-size:0.8em;
+    text-align:left;
+    margin-bottom:3px;
+    margin-left:10px;
+    color:white;
+}
+
+.detpost{
+    margin-top:20px;
+}
+
+.detpost .timestamp{
+    margin-top:10px;
+    margin-left:20px;
+    text-align:left;
+}
+
+.detpost .title{
+    font-family:Pacifico,sans-serif;
+    font-size:2em;
+    color: #2d2d2d;
+    text-align:center;
+}
+
+.detpost .image{
+    poaition:relative;
+    display:block;
+    margin:20px;
+    max-height:500px;
+}
+
+.detpost .image img{
+    position:relative;
+    display:block;
+    margin:0 auto;
+    max-height:inherit;
+    width:auto;
+}
+
+.detpost .description{
+    margin:20px;
+    font-size:1.3em;
+    color: #2d2d2d;
+}
+
+.form-container{
+    margin-top:100px;
+}
+
+.loginMessage{
+    text-align:center;
+    font-size:1.2em;
+    color: #2d2d2d;
+    margin:20px;
+}
+
+.loginForm{
+    margin-top:20px;
+}
+
+.errormessage{
+    color:darkred;
+    font-size:1em;
+    text-align:center;
+}
